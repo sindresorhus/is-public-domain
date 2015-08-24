@@ -1,6 +1,6 @@
 {
   "name": "is-public-domain",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Check if a domain is public",
   "license": "MIT",
   "repository": "sindresorhus/is-public-domain",
