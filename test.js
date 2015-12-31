@@ -1,12 +1,10 @@
-'use strict';
-var test = require('ava');
-var fn = require('./');
+import test from 'ava';
+import m from './';
 
-test(function (t) {
-	t.assert(fn('sindresorhus.com'));
-	t.assert(fn('sindresorhus.ninja'));
-	t.assert(!fn('sindresorhus.local'));
-	t.assert(!fn(''));
-	t.assert(!fn());
-	t.end();
+test(t => {
+	t.true(m('sindresorhus.com'));
+	t.true(m('sindresorhus.ninja'));
+	t.false(m('sindresorhus.local'));
+	t.false(m(''));
+	t.false(m());
 });
