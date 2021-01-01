@@ -1,4 +1,4 @@
-# is-public-domain [![Build Status](https://travis-ci.org/sindresorhus/is-public-domain.svg?branch=master)](https://travis-ci.org/sindresorhus/is-public-domain)
+# is-public-domain
 
 > Check if a domain is public
 

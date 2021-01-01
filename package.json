@@ -1,38 +1,47 @@
 {
-  "name": "is-public-domain",
-  "version": "1.0.0",
-  "description": "Check if a domain is public",
-  "license": "MIT",
-  "repository": "sindresorhus/is-public-domain",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
-  "keywords": [
-    "domain",
-    "pulic",
-    "url",
-    "uri",
-    "tld",
-    "is",
-    "detect",
-    "check"
-  ],
-  "dependencies": {
-    "tlds": "^1.55.1"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  }
+	"name": "is-public-domain",
+	"version": "1.0.0",
+	"description": "Check if a domain is public",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sindresorhus/is-public-domain.git"
+	},
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=0.10.0"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"domain",
+		"pulic",
+		"url",
+		"uri",
+		"tld",
+		"is",
+		"detect",
+		"check"
+	],
+	"dependencies": {
+		"tlds": "^1.55.1"
+	},
+	"devDependencies": {
+		"ava": "^[object Promise]",
+		"xo": "^[object Promise]"
+	},
+	"bugs": {
+		"url": "https://github.com/sindresorhus/is-public-domain/issues"
+	},
+	"readme": "ERROR: No README data found!",
+	"homepage": "https://github.com/sindresorhus/is-public-domain#readme",
+	"_id": "is-public-domain@1.0.0"
 }
