@@ -1,12 +1,18 @@
-'use strict';
-var tlds = require('tlds');
+import {createRequire} from 'node:module';
 
-module.exports = function (domain) {
-	if (!domain) {
+const require = createRequire(import.meta.url);
+const tlds = require('tlds');
+
+export default function isPublicDomain(domain) {
+	if (typeof domain !== 'string') {
+		throw new TypeError(`Expected a \`string\`, got \`${typeof domain}\``);
+	}
+
+	if (domain.trim() === '') {
 		return false;
 	}
 
-	var tld = domain.split('.').pop();
+	const tld = domain.split('.').pop();
 
-	return tld && tlds.indexOf(tld) !== -1;
-};
+	return tld && tlds.includes(tld);
+}

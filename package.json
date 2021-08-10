@@ -3,17 +3,17 @@
 	"version": "1.0.0",
 	"description": "Check if a domain is public",
 	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/sindresorhus/is-public-domain.git"
-	},
+	"repository": "sindresorhus/is-public-domain",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
+	"type": "module",
+	"exports": "./index.js",
 	"engines": {
-		"node": ">=0.10.0"
+		"node": "^12.20.0 || ^14.13.1 || >=16.0.0"
 	},
 	"scripts": {
 		"test": "xo && ava"
@@ -25,23 +25,16 @@
 		"domain",
 		"pulic",
 		"url",
-		"uri",
 		"tld",
 		"is",
 		"detect",
 		"check"
 	],
 	"dependencies": {
-		"tlds": "^1.55.1"
+		"tlds": "^1.221.1"
 	},
 	"devDependencies": {
-		"ava": "^[object Promise]",
-		"xo": "^[object Promise]"
-	},
-	"bugs": {
-		"url": "https://github.com/sindresorhus/is-public-domain/issues"
-	},
-	"readme": "ERROR: No README data found!",
-	"homepage": "https://github.com/sindresorhus/is-public-domain#readme",
-	"_id": "is-public-domain@1.0.0"
+		"ava": "^3.15.0",
+		"xo": "^0.44.0"
+	}
 }

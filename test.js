@@ -1,10 +1,9 @@
 import test from 'ava';
-import m from './';
+import isPublicDomain from './index.js';
 
-test(t => {
-	t.true(m('sindresorhus.com'));
-	t.true(m('sindresorhus.ninja'));
-	t.false(m('sindresorhus.local'));
-	t.false(m(''));
-	t.false(m());
+test('main', t => {
+	t.true(isPublicDomain('sindresorhus.com'));
+	t.true(isPublicDomain('sindresorhus.ninja'));
+	t.false(isPublicDomain('sindresorhus.local'));
+	t.false(isPublicDomain(''));
 });
